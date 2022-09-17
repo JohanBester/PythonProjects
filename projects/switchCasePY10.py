@@ -1,8 +1,9 @@
 # Case with the traditional if...elif statement
 
-age = 120
+print("\nTraditional case with If...Else:\n")
+age = int(input("Enter your age : "))
 
-if age > 90:
+if age > 80:
     print("You are too old to party, granny.")
 elif age < 0:
     print("You're yet to be born")
@@ -12,8 +13,7 @@ else:
     "You're too young to party"
 
 # spoofing a switch case using a def
-
-
+"""
 def switch(lang):
     if lang == "JavaScript":
         return "You can become a web developer."
@@ -26,13 +26,14 @@ def switch(lang):
     elif lang == "Java":
         return "You can become a mobile app developer"
 
-
 print(switch("JavaScript"))
 print(switch("PHP"))
 print(switch("Java"))
+"""
 
 # python 3.10 switch case method
 
+print("\nPython 3.10 Switch Case: \n")
 lang = input("What's the programming language you want to learn? ")
 
 match lang:
@@ -53,18 +54,19 @@ match lang:
     case _:
         print("The language doesn't matter, what matters is solving problems.")
 
-a = float(input('First: '))
-b = float(input('Second: '))
-op = input('Operation (sum/sub/mul/div): ')
+print("\nSimple text calculator:\n")
+a = float(input("Enter First number: "))
+b = float(input("Enter Second number: "))
+op = input("Enter Operation (sum/sub/mul/div): ")
 
 match op:
-    case 'sum':
-        print(f'a + b = {a+b}')
-    case 'sub':
-        print(f'a - b = {a-b}')
-    case 'mul':
-        print(f'a * b = {a*b}')
-    case 'div':
-        print(f'a / b = {a/b}')
+    case "sum":
+        print(f"a + b = {a+b}")
+    case "sub":
+        print(f"a - b = {a-b}")
+    case "mul":
+        print(f"a * b = {a*b}")
+    case "div":
+        print(f"a / b = {a/b}")
     case _:
-        print('Invalid Operation!')
+        print("Invalid Operation!")
