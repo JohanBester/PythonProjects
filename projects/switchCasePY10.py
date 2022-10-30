@@ -1,6 +1,6 @@
 # Case with the traditional if...elif statement
 
-print("\nTraditional case with If...Else:\n")
+print("\nTraditional case with If...Else:")
 age = int(input("Enter your age : "))
 
 if age > 80:
@@ -11,6 +11,7 @@ elif age >= 18:
     print("You are allowed to party")
 else:
     "You're too young to party"
+
 
 # spoofing a switch case using a def
 """
@@ -33,7 +34,7 @@ print(switch("Java"))
 
 # python 3.10 switch case method
 
-print("\nPython 3.10 Switch Case: \n")
+print("\nPython 3.10 Switch Case:")
 lang = input("What's the programming language you want to learn? ")
 
 match lang:
@@ -54,7 +55,10 @@ match lang:
     case _:
         print("The language doesn't matter, what matters is solving problems.")
 
-print("\nSimple text calculator:\n")
+
+
+
+print("\nSimple text calculator:")
 a = float(input("Enter First number: "))
 b = float(input("Enter Second number: "))
 op = input("Enter Operation (sum/sub/mul/div): ")

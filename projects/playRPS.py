@@ -9,9 +9,11 @@ def play():
         return "It's a tie"
     elif is_win(user, computer):
         score["player"] = score["player"] + 1
+        print(f"The computer chose {computer}")
         return "You win this one!"
     else:
         score["computer"] = score["computer"] + 1
+        print(f"The computer chose {computer}")
         return "Sorry, better luck next time."
 
 
@@ -53,7 +55,13 @@ if response == 'y':
         elif round == 4:
             print("\nLet's see who won the Match ....")
             print(complete_game())
-            exit
+            again = input("\nShall we play again (y/n)?").lower()
+            if again == "y":
+                round = 1
+                continue
+            else:
+                print("OK, bye!")
+                exit
         round += 1
 
 else:

@@ -1,10 +1,11 @@
+# numberguess.py
 import random
 
 num = random.randint(1, 15)
 guess = None
 
 while guess != num:
-    guess = input("guess a number between 1 and 10: ")
+    guess = input("guess a number between 1 and 15: ")
     guess = int(guess)
 
     if guess == num:

@@ -7,6 +7,7 @@ The sorted() method sorts iterable data such as lists, tuples, and dictionaries.
 -- The sorted() method puts the sorted items in a list. 
 
 The challenge is to sort by value and maintain a dictionary after the fact.
+
 To correctly sort a dictionary by value with the sorted() method, 
 you will have to do the following:
 -- pass the dictionary to the sorted() method as the first value
@@ -17,6 +18,7 @@ you will have to do the following:
 Using a dictionary of footballers and their total goals scored
 
 """
+
 footballers_goals = {
     "Eusebio": 120,
     "Cruyff": 104,
@@ -33,10 +35,11 @@ print("\n'sorted_footballers_by_goals' ... \n", sorted_footballers_by_goals)
 # Output:[('Cruyff', 104), ('Eusebio', 120), ('Messi', 125), ('Ronaldo', 132), ('Pele', 150)]
 
 """
-The problem is that the dictionary is not a dictionary anymore.
-The individual keys and values were put in tuples, into a list.
+Now the problem is that the dictionary is not a dictionary anymore.
+- The individual keys and values were put in tuples, into a list.
 To convert the resulting list to a dictionary, 
-just pass the variable of the list into the dict() method.
+- pass the variable of the list into the dict() method.
+
 """
 converted_dict = dict(sorted_footballers_by_goals)
 print("\n 'converted_dict' ... \n", converted_dict)

@@ -1,3 +1,5 @@
+# factorial.py
+
 def factorial(n):
     if n == 1:
         return n
@@ -7,7 +9,7 @@ def factorial(n):
 
 num = input("Enter a positive number : ")
 
-n = int(num)
+n = float(num)
 
 # check if the number is negative
 if n < 0:

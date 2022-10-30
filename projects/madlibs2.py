@@ -1,29 +1,37 @@
-print("Welcome to my game! Let's play!")
-A1 = "Yes"
+# madLibs2.py
 
-while A1 == "Yes":
-    color = input("Enter a color: ")
+print("Welcome to my game! Let's play!")
+A1 = "yes"
+
+while A1 == "yes":
+    color = input("\nEnter a color: ")
     pluralNoun = input("Enter a plural noun: ")
     celebrity = input("Enter a celebrity: ")
 
-    print("Roses are", color)
+    print("\nRoses are", color)
     print(pluralNoun + " are blue")
     print("I love", celebrity)
 
-    Question = input("Want to play again? ")
+    Question = input("\nWant to play again? (yes/no) ").lower()
 
     if Question == A1:
-        print("Let's Go")
+        print("\nLet's Go")
     else:
         print("Thanks for playing!")
-        Break
+        break
 
-    color1 = input("Enter a color: ")
-    singnoun = input("Enter a noun: ")
+    color1 = input("\nEnter a color: ")
+    singNoun = input("Enter a noun: ")
     food = input("Enter a food: ")
 
-    print("Dogs are", color)
-    print("A " + singnoun + " is loud")
+    print("\nDogs are", color)
+    print("A " + singNoun + " is loud")
     print("I love", food)
 
+    Question = input("\nWant to play again? (yes/no) ").lower()
 
+    if Question == A1:
+        print("\nLet's Go")
+    else:
+        print("Thanks for playing!")
+        break

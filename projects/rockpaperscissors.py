@@ -1,7 +1,8 @@
+# rockpaperscissors.py
+
 import random
 
 print("Welcome to Rock, Paper, Scissors!")
-
 
 while True:
     user_score = 0
@@ -45,4 +46,6 @@ while True:
 
     play_again = input("Play again? (y/n): ")
     if play_again.lower() != "y":
+        print("OK, bye!")
         break
+    
