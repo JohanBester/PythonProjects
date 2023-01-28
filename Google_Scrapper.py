@@ -11,7 +11,7 @@ search_url = site_search+url_term
 url = site_search+url_term+'&tbm=isch'
 print(url)
 r = requests.get(url)
-soup = bs(r.content, 'html.parser')
+soup = bs(r.content, 'html5lib')     ##'html.parser'
 total_links = 0
 link_list = []
 raw_list = []
