@@ -1,0 +1,8 @@
+{
+    "TEST-7-APGLData.csv": "Account,Account_Description,GL_1,GL_1_Description,GL_2,GL_2_Description,GL_3,GL_3_Description",
+    "TEST-7-APOpenPO.csv": "PO_Number,PO_Line_Number,PO_Release,PO_Date,Vendor_Number,Vendor_Name,Buyer,Requestor,Match_Type,Item_Number,Item_Price,Quantity_Ordered,Item_Extended_Price,Open_Quantity,Open_Extended_Price,UOM",
+    "TEST-7-APOpenRcpts.csv": "PO_Number,PO_Line_Number,PO_Release,Receipt_Number,Receipt_Date,Vendor_Number,Vendor_Name,Buyer,Requestor,Match_Type,Item_Number,Item_Price,Quantity_Received,Item_Extended_Price,UOM",
+    "TEST-7-APPaymentData.csv": "DIN,Payment_Number,Payment_Amount,Payment_Date,Payment_Status",
+    "TEST-7-APVendorMaster.csv": "Vendor_Number,Vendor_Name,Address1,Address2,Address3,Address4,City,State,Postal_Code,Country,Terms",
+    "TEST-7-betsy_payable.csv": "DIN,Vendor_Name,Vendor_Number,Invoice_Number,Invoice_Date,Invoice_Total,PO_Number,NA-Not-Used1,NA-Not-Used2,Division,Check_Date,Check_Number,NA-Not-Used3,Project_ID,Task_ID,Expenditure_Type,NA-Not-Used4,NA-Not-Used5,NA-Not-Used6,NA-Not-Used7,NA-Not-Used8,NA-Not-Used9,NA-Not-Used10,NA-Not-Used11,NA-Not-Used12"
+}

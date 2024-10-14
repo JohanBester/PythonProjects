@@ -1,0 +1,136 @@
+{
+    "date": {
+        "contains": [
+            "date",
+            "period"
+        ],
+        "state_date": "today",
+        "end_date": "+30y"
+    },
+    "url": {
+        "contains": [
+            "url"
+        ],
+        "length": 250
+    },
+    "password": {
+        "contains": [
+            "password"
+        ],
+        "length": 18,
+        "special_chars": "True",
+        "upper_case": "False"
+    },
+    "address": {
+        "contains": [
+            "address"
+        ]
+    },
+    "city": {
+        "contains": [
+            "city"
+        ]
+    },
+    "state": {
+        "contains": [
+            "state"
+        ]
+    },
+    "country": {
+        "contains": [
+            "country"
+        ]
+    },
+    "postalcode": {
+        "contains": [
+            "postal_code",
+            "zip"
+        ],
+        "len": 10
+    },
+    "text": {
+        "contains": [
+            "status",
+            "terms",
+            "gl_",
+            "_description",
+            "memo"
+        ],
+        "len": 50
+    },
+    "phone": {
+        "contains": [
+            "phone",
+            "telephone",
+            "tel_num",
+            "cell",
+            "cell_num"
+        ]
+    },
+    "integer": {
+        "contains": [
+            "link"
+        ],
+        "len": 2
+    },
+    "number": {
+        "contains": [
+            "account",
+            "din",
+            "number",
+            "quantity",
+            "_code",
+            "code",
+            "employee_id",
+            "ID"
+        ],
+        "len": 50
+    },
+    "company": {
+        "contains": [
+            "entity",
+            "company",
+            "location"
+        ],
+        "len": 150
+    },
+    "money": {
+        "contains": [
+            "amount",
+            "total",
+            "price",
+            "payment",
+            "cost"
+        ],
+        "len": 18
+    },
+    "yes_no": {
+        "contains": [
+            "closed",
+            "active"
+        ]
+    },
+    "rstring": {
+        "contains": [
+            "match_type",
+            "uom",
+            "task",
+            "solution_set",
+            "paycode",
+            "_Unit",
+            "location"
+        ],
+        "len": 50
+    },
+    "name": {
+        "contains": [
+            "name",
+            "buyer",
+            "requestor",
+            "employee",
+            "Vendor",
+            "client"
+        ],
+        "len": 150
+    }
+}

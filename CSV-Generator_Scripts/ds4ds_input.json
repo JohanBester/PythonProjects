@@ -1,0 +1,10 @@
+{
+    "ds4dsTEST-APVendorMaster-08042023.csv": "Vendor_Number,Vendor_Name,Address1,Address2,City,State,Postal_Code,Country,Terms",
+    "ds4dsTEST-APGLData-08042023.csv": "Account,Account_Description,GL_1,GL_1_Description,GL_2,GL_2_Description,GL_3,GL_3_Description",
+    "ds4dsTEST-APOpenPO-08042023.csv": "PO_Number,PO_Date,Vendor_Name,Buyer,Item_Extended_Price,Open_Extended_Price",
+    "ds4dsTEST-APOpenRcpts-08042023.csv": "PO_Number,PO_Line_Number,PO_Release,Receipt_Number,Receipt_Date,Vendor_Number,Vendor_Name,Buyer,Requestor,Match_Type,Item_Number,Item_Price,Quantity_Received,Item_Extended_Price,UOM",
+    "ds4dsTEST-APValidation-08042023.csv": "DIN,Invoice_Number,Invoice_Date,PO_Number,Invoice_Total,Vendor_Number,Vendor_Name",
+    "ds4dsTEST-APPaymentData-08042023.csv": "DIN,Payment_Number,Payment_Amount,Payment_Date,Payment_Status",
+    "ds4dsTEST-DSCCData-08042023.csv": "Transaction_Type,Date_Initiated,Date_Posted,Memo,Amount,Emp_Name,Employee_ID",
+    "reportnotinuse-ds4dsTEST-08042023.csv": "Client,Task,Solution_Set,Paycode,Regular_Hours,OT_1,Total_Hours,Employee,Period"
+}
