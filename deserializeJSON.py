@@ -1,43 +1,60 @@
 import json
 
 
-def format_json(input_file, output_file=None):
+def deserialize_specific_key(input_file, key):
     # Read the JSON data from the input file
-    with open(input_file, 'r') as f:
-        data = json.load(f)
+    with open(input_file, 'r') as infile:
+        json_string = infile.read()
     
+    # Deserialize the JSON string into a Python dictionary
+    data = json.loads(json_string)
+    
+    # Check if the data is a list
+    if isinstance(data, list):
+        # Iterate over each item in the list and apply replacements
+        for item in data:
+            if isinstance(item, dict) and key in item:
+                item[key] = item[key].replace('\\n', '\n').replace('\"', '"')
+                print(item[key])
+
+    return data  # Return the modified list
+
+
+def format_json(result_data, output_file=None):
     # Format the JSON data
-    formatted_json = json.dumps(data, indent=4)
+    formatted_json = json.dumps(result_data, indent=4)
 
     # If an output file is provided, save the formatted JSON to that file
     if output_file:
         with open(output_file, 'w') as f:
             f.write(formatted_json)
-
-
-def clean_json(input_file_path, output_file_path):
-    # Read data from the input file
-    with open(input_file_path, 'r') as file:
-        data = file.read()
-
-    # Strip out '\n' and replace '\"'
-    cleaned_data = data.replace('\\n', '\n').replace('\\"', '"')
-
-    # Write the cleaned data to the output file
-    with open(output_file_path, 'w') as file:
-        file.write(cleaned_data)
+            
+    return formatted_json
 
 
 # Example usage
 if __name__ == "__main__":
     
+    cleaned_file_path = 'cleaned_data.txt'
+    formatted_json_output = 'formatted_json.json'
+    
+    # Specify your input file here
     input_file_path = 'tenantJson.json'
-    output_file_path = 'cleaned_data.txt'
+    # Specify the key you want to extract
+    key_to_extract = 'json'
     
-    clean_json(input_file_path, output_file_path)
-    
-    formatted_json = 'formatted_json.json'  # Optional: Replace with your desired output file path
-    
-    format_json(output_file_path, formatted_json)
+    data = deserialize_specific_key(input_file_path, key_to_extract)
 
-    print("Data has been cleaned and written to", formatted_json)
+    if data:
+        print(f"The value of the key '{key_to_extract}' was found.")
+        # print(data)
+        
+        formatted_json = format_json(data, formatted_json_output)
+        
+        if formatted_json:
+            print("Data has been formatted and written to", formatted_json_output)
+        else:
+            print("There was an error formatting the data")
+
+    else:
+        print(f"The key '{key_to_extract}' was not found in the JSON.")
